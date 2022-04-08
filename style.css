@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+*{
+    margin:0; padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(to right, #141E30, #243B55);
+    position: relative;
+    perspective: 600px;
+}
+.hero .logo {
+    width: 50px;
+    border-radius: 50%;
+    margin-left: 35px;
+}
+nav  {
+    width: 100%;
+    margin: 0 auto;
+    height: 130px;
+    background: linear-gradient(to right, #243B55, #436285);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 1rem;
+    box-shadow: 1px 1px 5px black;
+}
+nav .hero {
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+}
+nav .hero h1 {
+    margin-left: 10px;
+    color: orange;
+    font-size: 20px;
+    font-family: Roboto;
+    text-shadow: 2px 2px 5px black;
+}
+nav .heroine {
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 100%;
+}
+nav .heroine, .two {
+    margin-left: 40px;
+    margin-top: -15px;
+}
+nav .heroine, .one {
+    margin-right: 20px;
+    margin-top: -15px;
+}
+nav .heroine input {
+    background-color: rgb(199, 196, 196);
+    border-radius: 1rem;
+    outline: none;
+    border: 1px solid rgb(78, 77, 77);
+    box-shadow: 1px 1px 5px black inset;
+    padding-left: 5px;
+    height: 26px;
+
+}
+nav .heroine input:focus {
+  background: none;
+}
+nav .heroine input:hover {
+  border-color: lightgreen;
+  width: 200px;
+}
+nav .heroine button {
+    position: absolute;
+    bottom: 5px;
+    width: 120px;
+    left: 3%;
+    color: white;
+    background: linear-gradient(to left , #243B55, #436285);
+    border: 1px solid #363795;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgb(64, 215, 253),
+                -2px -2px 5px  rgb(64, 215, 253)  ;
+    height: 23px;
+}
+nav .heroine button:hover{
+  background-color: lightgreen:
+}
+nav .heroine a {
+  text-decoration: none;
+  font-size: 18px;
+  font-family: Roboto;
+  position: absolute;
+  bottom: 10px;
+  right: 5%;
+  color: orange;
+  text-shadow: 3px 3px 5px black;
+}
+nav .heroine p {
+    color: white;
+    font-size: 15px;
+    margin-left: 10px;
+    margin-bottom: 3px;
+}
+
+section {
+  background: none;
+  width: 400px;
+  height: 600px;
+  position: absolute;
+  top: 20%;
+  right:10%;
+}
+section .contact {
+  line-height: 40px;
+  font-family: Roboto;
+  font-size: 18px;
+}
+section .contact small {
+  color: white;
+}
+section .contact h1 {
+  color: white;
+  text-shadow: 5px 5px 10px black;
+}
+section .info, .birthay, .sexe {
+  margin: 20px;
+  font-family: Roboto;
+  font-size: 18px;
+}
+section .info input {
+  margin-top: 5px;
+  border: 1px solid transparent;
+  border-radius: 2rem;
+  width: 250px;
+  height: 26px;
+  padding-left: 10px;
+  outline: none;
+  background: rgb(199, 196, 196);
+  box-shadow: 1px 1px 5px black inset;
+  color: black;
+}
+section .info input:hover {
+  border-color: lightgreen;
+  width: 260px;
+}
+section .info input:focus {
+  background: none;
+  color: orange;
+}
+section .info p {
+  color: white;
+  margin-top: 12px;
+  text-shadow: 2px 2px 3px black;
+}
+section .birthay p {
+  font-size: 20px;
+  font-family: Roboto;
+  color: white;
+  text-shadow: 2px 2px 5px black;
+}
+section .birthay input {
+  margin-top: 5px;
+  border: 1px solid transparent;
+  border-radius: 1rem;
+  width: 250px;
+  height: 26px;
+  padding-left: 10px;
+  outline: none;
+  background: rgb(199, 196, 196);
+  box-shadow: 1px 1px 5px black inset;
+}
+section .sexe {
+  display: flex;
+}
+section .sexe input {
+  margin-left: 15px;
+}
+section .sexe label {
+  margin-left: 10px;
+  font-size: 18px;
+  font-family: Roboto;
+  color: orange;
+  font-weight: bold;
+}
+section button {
+  width: 120px;
+  position: absolute;
+  right: 200px;
+  margin-top: 20px;
+  padding: 3px;
+  color: darkblue;
+  font-weight: bold;
+  border: 1px solid transparent;
+  border-radius: 2rem;
+  box-shadow: 2px 2px 5px black inset, 2px 2px 3px lightgray ;
+  cursor: pointer;
+}
+.background {
+  perspective: 500px;
+  position: absolute;
+  top: 30%;
+  left: 2%;
+  box-shadow: 3px 3px 5px white;
+  border-radius: 1rem;
+  transform: skewX(-5deg) rotateX(30deg);
+}
+.background img {
+  width: 500px;
+  border-radius: 5rem;
+}
+.background:hover{
+  transform: skew(5deg) rotate(0deg);
+}
+section .info i{
+  font-size: 25px;
+  color: orange;
+  position: absolute;
+  left: -3%;
+  margin-top: 5px;
+}
